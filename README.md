@@ -1,3 +1,3 @@
-# Book-Haven-Bookstore
+# Book Haven Bookstore
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/hoyennhi489/Book-Haven-Bookstore)
+This is the first project I created entirely by myself. Although it is not perfect and some features are still incomplete, after three months since I started learning web development from scratch, I am quite satisfied with this first achievement of mine.
