@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <!-- Thêm Font Awesome để sử dụng các icon mạng xã hội -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://sophialearning.s3.amazonaws.com/markup_pictures/38789/file/d416ddc1e21da4a637596a8a6e29ae21.png" alt="Product Logo" height="60">
+      </div>
+      <h1>Book Haven Bookstore</h1>
+      <nav id="nav-bar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="custom.html" class="nav-link">Custom</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Welcome to Book Haven!</h2>
+        <p>Your destination for the best books.</p>
+
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>Quality service with great books and excellent customer support.</li>
+          <li>A wide selection of books for all ages and tastes.</li>
+          <li>Free shipping on orders over $50.</li>
+          <li>Get 10% off your first order with the code <strong>FIRST10</strong>.</li>
+          <li>Up to 50% off on select books this summer.</li>
+          <li>Free gift (bookmark or mini-book) with orders over $50.</li>
+        </ul>
+
+        <h3>Featured Books:</h3>
+        <ul class="book-list">
+          <li class="book-item">
+            <a href="images/Client3_Magazine2.png">
+            <img src="images/Client3_Magazine2.png" alt="Travel" class="book-image">
+            </a>
+            <p>Travel</p> 
+            <p>Price: $19.9</p>
+            <button class="add-to-cart-button" data-item="Travel">Add to Cart</button>
+          </li>
+          
+          <li class="book-item">
+            <a href="images/Client3_Book2.png">
+            <img src="images/Client3_Book2.png" alt="Glory Riders" class="book-image">
+            </a>
+            <p>Glory Riders</p> 
+            <p>Price: $15.99</p>
+            <button class="add-to-cart-button" data-item="Glory Riders">Add to Cart</button>
+          </li>
+  
+          <li class="book-item">
+            <a href="images/Client3_Book3.png">
+            <img src="images/Client3_Book3.png" alt="Sorcerer’s Shadowed Chronicles" class="book-image">
+            </a>
+            <p>Sorcerer’s Shadowed Chronicles</p> 
+            <p>Price: $17</p>
+            <button class="add-to-cart-button" data-item="Sorcerer’s Shadowed Chronicles">Add to Cart</button>
+          </li>
+        </ul>
+
+        <h3>Your Shopping Benefits:</h3>
+        <ul>
+          <li>Earn reward points with every purchase and get discounts on future orders.</li>
+          <li>30-day return policy if you’re not satisfied with your purchase.</li>
+          <li>Need help choosing a book? Our team is here to assist you.</li>
+        </ul>
+
+        <h3>Browse by Category:</h3>
+        <ul>
+          <li>Fiction</li>
+          <li>Science</li>
+          <li>Children's Books</li>
+        </ul>
+
+        <h3>Discount Code:</h3>
+        <p>Use the code <strong>FIRST10</strong> to get 10% off your first order.</p>
+      </section>
+    </main>
+
+    <!-- Giỏ hàng -->
+      <div id="cart-container">
+        <button id="cart-button">
+          <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+        </button>
+      </div>
+
+      <div id="cart-details">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <button id="clear-cart">Clear Cart</button>
+      </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <!-- Đăng ký nhận bản tin -->
+        <div class="newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Liên kết mạng xã hội -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/BookHaven" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/BookHaven" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/BookHaven" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/bookhaven" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <nav id="nav-bar">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="custom.html" class="nav-link">Custom</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore - Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://sophialearning.s3.amazonaws.com/markup_pictures/38789/file/d416ddc1e21da4a637596a8a6e29ae21.png" alt="Product Logo" height="60">
+      </div>
+      <h1>Gallery</h1>
+      <nav id="nav-bar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="custom.html" class="nav-link">Custom</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="cart">
+        <ul class="book-list">
+          <li class="book-item">
+            <a href="images/Client3_Book1.png">
+            <img src="images/Client3_Book1.png" alt="Brie Mine 4Everl" class="book-image">
+            </a>
+            <p>Brie Mine 4Everl</p> 
+            <p>Price: $20</p>
+            <button class="add-to-cart-button" data-item="Brie Mine 4Everl">Add to Cart</button>
+          </li>
+          
+          <li class="book-item">
+            <a href="images/Client3_Book2.png">
+            <img src="images/Client3_Book2.png" alt="Glory Riders" class="book-image">
+            </a>
+            <p>Glory Riders</p> 
+            <p>Price: $15.99</p>
+            <button class="add-to-cart-button" data-item="Glory Riders">Add to Cart</button>
+          </li>
+  
+          <li class="book-item">
+            <a href="images/Client3_Book3.png">
+            <img src="images/Client3_Book3.png" alt="Sorcerer’s Shadowed Chronicles" class="book-image">
+            </a>
+            <p>Sorcerer’s Shadowed Chronicles</p> 
+            <p>Price: $17</p>
+            <button class="add-to-cart-button" data-item="Sorcerer’s Shadowed Chronicles">Add to Cart</button>
+          </li>
+
+          <li class="book-item">
+          <a href="images/Client3_Magazine1.png">
+          <img src="images/Client3_Magazine1.png" alt="Ball" class="book-image">
+          </a>
+          <p>Ball</p> 
+          <p>Price: $12</p>
+          <button class="add-to-cart-button" data-item="Ball">Add to Cart</button>
+        </li>
+
+        <li class="book-item">
+        <a href="images/Client3_Magazine2.png">
+        <img src="images/Client3_Magazine2.png" alt="Travel" class="book-image">
+        </a>
+        <p>Travel</p> 
+        <p>Price: $19.9</p>
+        <button class="add-to-cart-button" data-item="Travel">Add to Cart</button>
+        </li>
+
+        <li class="book-item">
+        <a href="images/Client3_Magazine3.png">
+        <img src="images/Client3_Magazine3.png" alt="Eat." class="book-image">
+        </a>
+        <p>Eat.</p> 
+        <p>Price: $21</p>
+        <button class="add-to-cart-button" data-item="Eat.">Add to Cart</button>
+        </li>
+
+        <li class="book-item">
+        <a href="images/Client3_ToteBag.png">
+        <img src="images/Client3_ToteBag.png" alt="A canvas tote bag with black lettering that says ALL I DO IS READ READ READ." class="book-image">
+        </a>
+        <p>A canvas tote bag with black lettering that says ALL I DO IS READ READ READ</p> 
+        <p>Price: $19.99</p>
+        <button class="add-to-cart-button" data-item="Canvas Tote Bag">Add to Cart</button>
+        </li>
+
+        <li class="book-item">
+        <a href="images/Client3_Notebook.png">
+        <img src="images/Client3_Notebook.png" alt="A notebook with text on the cover that says Book Haven Bookstore" class="book-image">
+        </a>
+        <p>A notebook with text on the cover that says Book Haven Bookstore</p> 
+        <p>Price: $16.99</p>
+        <button class="add-to-cart-button" data-item="Notebook">Add to Cart</button>
+        </li>
+
+        <li class="book-item">
+        <a href="images/Client3_Stickers.png">
+        <img src="images/Client3_Stickers.png" alt="A set of four Book Haven Bookstore stickers that promote reading" class="book-image">
+        </a>
+        <p>A set of four Book Haven Bookstore stickers that promote reading</p> 
+        <p>Price: $19.99</p>
+        <button class="add-to-cart-button" data-item="Book Haven Stickers">Add to Cart</button>
+        </li>
+      </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Giỏ hàng -->
+    <div id="cart-container">
+      <button id="cart-button">
+        <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+      </button>
+    </div>
+
+    <div id="cart-details">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <button id="clear-cart">Clear Cart</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+    <div class="footer-container">
+      <div class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/BookHaven" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/BookHaven" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/BookHaven" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/bookhaven" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <nav id="nav-bar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="custom.html" class="nav-link">Custom</a>
+      </nav>
+    </div>
+    </footer>  
+  </body>
+</html>

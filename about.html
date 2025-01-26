@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore - About us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    
+    <!-- Thêm Font Awesome để sử dụng các icon mạng xã hội -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://sophialearning.s3.amazonaws.com/markup_pictures/38789/file/d416ddc1e21da4a637596a8a6e29ae21.png" alt="Product Logo" height="60">
+      </div>
+      <h1>About Us</h1>
+      <nav id="nav-bar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="custom.html" class="nav-link">Custom</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about-us">
+        <p>Book Haven is the perfect destination for book lovers. With the mission of spreading knowledge, we offer thousands of books suitable for all ages.</p>
+      </section>
+
+      <section id="customer-info">
+        <h2>Customer Information</h2>
+        <p><strong>Hours of Operation:</strong></p>
+        <ul>
+          <li>Monday – Friday: 9 a.m. to 8 p.m.</li>
+          <li>Saturday: 10 a.m. to 6 p.m.</li>
+          <li>Sunday: 11 a.m. to 5 p.m.</li>
+        </ul>
+        <p>We serve all book enthusiasts and are always ready to meet your needs.</p>
+      </section>
+
+      <section id="feedback-form">
+        <h2>Contact us</h2>
+        <form action="/submit-feedback" method="POST">
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Your Name"  required><br><br>
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="Your Email"  required><br><br>
+
+          <label for="phone-number">Phone Number:</label><br>
+          <input type="number" id="phone-number" name="phone-number" placeholder="Your Phone Number" required><br><br>
+
+          <label for="message">Feedback/Order Information:</label><br>
+          <textarea id="message" name="message" placeholder="Your feedback/Custom Order Information" rows="5" required></textarea><br><br>
+
+          <label for="attachment">Attachment (optional):</label><br>
+          <input type="file" id="attachment" name="attachment"><br><br>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Giỏ hàng -->
+    <div id="cart-container">
+      <button id="cart-button">
+        <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+      </button>
+    </div>
+
+    <div id="cart-details">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <button id="clear-cart">Clear Cart</button>
+    </div>
+  
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <!-- Đăng ký nhận bản tin -->
+        <div class="newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Liên kết mạng xã hội -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/BookHaven" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/BookHaven" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/BookHaven" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/bookhaven" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <nav id="nav-bar">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="custom.html" class="nav-link">Custom</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
